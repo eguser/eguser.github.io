@@ -1,0 +1,6 @@
+/* START HIDING ADS */
+div[data-test-id="right-rail-ad"],
+ul[data-test-id="infinite-scroll-rows"] li[data-test-id="infinite-scroll-PENCIL"] {
+	display: none !important;
+}
+/* END HIDING ADS */

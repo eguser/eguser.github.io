@@ -1,0 +1,38 @@
+/* START RESIZE PUBLIC COMMENT BOX */
+.casePublisher .detailContent .casePublisherText {
+  height: 26em;
+}
+/* END RESIZE PUBLIC COMMENT BOX */
+
+/* START NUMBERING CASE VIEW ROWS */
+.x-grid3-header table tr td:first-child,
+.x-grid3-body table tr td:first-child {
+  width: 45px !important;
+}
+
+.x-grid3-header table tr td:first-child div::before,
+.x-grid3-row-table tr td:first-child div::before {
+  content: "L #";
+  padding-right: 10px;
+  width: 20px !important;
+  display: inline-block;
+  text-align: right;
+  font-family: 'SalesforceSans-Regular',Helvetica,Arial,sans-serif;
+  font-size: 12.5px;
+  color: #54698d;
+  font-weight: normal;
+}
+
+.x-grid3-body {
+  counter-reset: rowNumber;
+}
+
+.x-grid3-body table tr td:first-child {
+  counter-increment: rowNumber;
+}
+
+.x-grid3-row-table tr td:first-child div::before {
+  content: counter(rowNumber);
+  color: #16325c;
+}
+/* END NUMBERING CASE VIEW ROWS */
