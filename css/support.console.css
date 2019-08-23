@@ -36,3 +36,8 @@
   color: #16325c;
 }
 /* END NUMBERING CASE VIEW ROWS */
+/* START STANDARD WRAP CELLS */
+.x-grid3-row-table .x-grid3-cell-inner {
+  white-space: normal;
+}
+/* END STANDARD WRAP CELLS */
